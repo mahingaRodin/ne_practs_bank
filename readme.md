@@ -1,0 +1,1 @@
+#This is a practical sets of project templates for training on the ne_practs.

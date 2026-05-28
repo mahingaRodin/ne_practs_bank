@@ -1,0 +1,24 @@
+{
+  "name": "xwz-parking-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "XWZ LTD Parking Management - Microservices Backend",
+  "scripts": {
+    "db:generate": "npm run generate --workspace=shared",
+    "db:push": "npm run db:push --workspace=shared",
+    "db:seed": "npm run seed --workspace=shared",
+    "dev": "concurrently -n gateway,auth,parking,entry,report -c blue,green,yellow,magenta,cyan \"npm run dev --workspace=api-gateway\" \"npm run dev --workspace=auth-service\" \"npm run dev --workspace=parking-service\" \"npm run dev --workspace=entry-service\" \"npm run dev --workspace=report-service\"",
+    "start": "npm run dev"
+  },
+  "workspaces": [
+    "shared",
+    "api-gateway",
+    "auth-service",
+    "parking-service",
+    "entry-service",
+    "report-service"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

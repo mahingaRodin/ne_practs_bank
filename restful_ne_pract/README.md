@@ -103,3 +103,5 @@ All requests go through `http://localhost:3000`:
 - `POST /api/entries/exit` — Car exit + bill
 - `GET /api/reports/outgoing?startDate=&endDate=` — Outgoing report
 - `GET /api/reports/entered?startDate=&endDate=` — Entered report
+
+//Testing working git on new pc
